@@ -1,12 +1,12 @@
 {
-  "name": "filmoteka",
+  "name": "Filmoteka",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://dairedo7.github.io/filmoteka/",
+  "homepage": "https://ipanamas.github.io/Filmoteka/",
   "scripts": {
     "dev": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /filmoteka/"
+    "build": "parcel build src/*.html --public-url /Filmoteka/"
   },
   "repository": {
     "type": "git",
