@@ -1,0 +1,96 @@
+.buttons-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  @include for-size(tablet) {
+    flex-direction: row;
+  }
+}
+
+.buttons-list__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @include for-size(tablet) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+
+.buttons-list__button {
+  text-decoration: none;
+  display: inline-block;
+
+  position: relative;
+  color: $blackColor;
+  padding: 10px 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0;
+
+  @include for-size (tablet) {
+    padding: 20px 30px;
+  }
+
+  transition: background 1.2s cubic-bezier(0.420, 0.000, 0.580, 1.000),
+  color 0.5s linear;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &:before {
+    bottom: 0;
+    left: 0;
+    border-left: 0.5px solid $accentColor;
+    border-top: 0.5px solid $accentColor;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+  }
+
+  &:after {
+    top: 0;
+    right: 0;
+    border-right: 0.5px solid $accentColor;
+    border-bottom: 0.5px solid $accentColor;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+
+  &:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+  }
+
+  &:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+  }
+
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgba($accentColor , $alpha: 0.6);
+    color: #ffffff;
+  }
+}

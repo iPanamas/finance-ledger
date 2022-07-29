@@ -1,0 +1,19 @@
+.scroll-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 100px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  transition: opacity .3s linear;
+
+  opacity: 0.4;
+
+  &_hide {
+    opacity: 0;
+    cursor: auto;
+  }
+}

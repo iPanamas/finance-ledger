@@ -1,0 +1,182 @@
+.dark {
+  background: $DarkThemeBackgroundColor;
+  color: $DarkThemeColorWhite;
+}
+
+body.dark {
+  .header {
+    box-shadow: 0px 0px 1px 0px $whiteColor;
+  }
+
+  .header-library {
+    box-shadow: 0px 0px 1px 0px $whiteColor;
+  }
+
+  .genres-form__option {
+    background-color: $DarkThemeBackgroundColorFooter;
+  }
+
+  .footer {
+    background: #1c1c1c;
+    color: $DarkThemeColorWhite ;
+    box-shadow: 0px 0px 1px 0px $whiteColor;
+  }
+
+  .scroll-top {
+    background: transparent;
+    color: $DarkThemeColorWhite ;
+  }
+
+
+  // Dark style for modal elements
+  .modal {
+    background: $DarkThemeModalBackground ;
+    border-color: rgba($color: $whiteColor, $alpha: 0.3);
+  }
+
+  .modalBackdrop {
+    background-color: $DarkThemeModalBackdrop;
+  }
+
+  .modal-close-btn {
+    color: $DarkThemeColorWhite ;
+
+    &:focus,
+    &:hover {
+      color: $accentColor ;
+    }
+  }
+
+  .modal-title {
+    color: $DarkThemeColorWhite;
+  }
+
+  .modal-img {
+    border-color: rgba($color: $whiteColor, $alpha: 0.3);
+  }
+
+  .modal-values {
+    color: $DarkThemeColorWhite;
+  }
+
+  .modal-votes {
+    color: $DarkThemeColorBlack;
+  }
+
+  .modal-overview {
+    color: $DarkThemeColorWhite;
+  }
+
+  .modal-text {
+    color: $DarkThemeColorWhite;
+  }
+
+  .modal-btn__watched {
+    border-color: $DarkThemeColorWhite;
+    color: $DarkThemeColorWhite;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  .modal-btn__queue {
+    border-color: $DarkThemeColorWhite;
+    color: $DarkThemeColorWhite;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+
+  .backdrop__trailer {
+    background-color: rgba($color: $whiteColor, $alpha: 0.1);
+  }
+
+  .trailer {
+    border-color: rgba($color: $blackColor, $alpha: 0.3);
+    ;
+  }
+
+  // End dark style for modal elements
+
+  // Films collection style
+  .films-collection {
+    .item__img {
+      border-color: rgba($color: $whiteColor, $alpha: 0.3);
+    }
+  }
+
+  // End films collection style
+
+  // Pagination dark style
+  .tui-pagination .tui-page-btn {
+    color: $textWhiteColor;
+  }
+
+  .tui-pagination .tui-first,
+  .tui-pagination .tui-prev,
+  .tui-pagination .tui-next,
+  .tui-pagination .tui-last,
+  .tui-pagination .tui-prev-is-ellip,
+  .tui-pagination .tui-next-is-ellip {
+    background-color: $DarkThemePaginationBtn;
+  }
+
+  // End pagination dark style
+  .buttons-list__button {
+    color: $whiteColor;
+    border: 0.5px solid rgba(250, 250, 250, 0.2);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba($accentColor , $alpha: 0.6);
+    }
+  }
+
+  // End sort button style
+
+  // Modal students style
+
+  .backdrop-team {
+    background-color: $DarkThemeTeamBackdrop;
+  }
+
+  .modal-team {
+    background-color: $DarkThemeBackgroundColorFooter;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-close-btn {
+    background: transparent;
+    color: $whiteColor;
+    transition: color $animationProps, transform $animationProps;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  .title-team {
+    color: $accentColor;
+  }
+
+  .team-box {
+    color: $whiteColor;
+    transition: transform $animationProps, box-shadow $animationProps;
+  }
+
+  .team-role {
+    color: $accentColor;
+  }
+
+  .avatar {
+    border: 1px solid rgba($color: $accentColor, $alpha: 0.6)
+  }
+
+  // End modal students style
+}
