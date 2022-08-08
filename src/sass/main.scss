@@ -1,12 +1,9 @@
-// Стили для файла с примером HTML-фрагмента
-
 //Base
 @import './base/common';
 
 //Utils
 @import './utils/variables';
 @import './utils/functions';
-@import './utils/loader';
 @import './utils/mixin';
 @import './utils/visually-hidden';
 
@@ -14,20 +11,7 @@
 @import './layout/container';
 
 //Components
-@import './components/change-theme-checkbox';
-@import './components/dark-theme';
-@import './components/scrollbar';
-@import './components/buttons';
-@import './components/my_library';
-@import './components/autocomplete';
-@import './components/header';
-@import './components/header_my_library';
-@import './components/collection';
-@import './components/search_buttons';
-@import './components/card';
-@import './components/modal';
-@import './components/pagination';
-@import './components/scroll-to-top';
-@import './components/footer';
-@import './components/spinner';
-@import './components/modalStudents';
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/advantage.scss';
+@import './components/cases.scss'

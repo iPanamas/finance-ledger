@@ -1,0 +1,110 @@
+.header {
+  background-color: #ffffff0d;
+
+  width: 1360px;
+  position: fixed;
+  left: 50%;
+  top: 0;
+
+  transform: translateX(-50%);
+
+  padding: 27px 0;
+
+  @include for-size(desktop) {
+    padding: 20px 0;
+  }
+}
+
+.header-container {
+  padding: 0 24px;
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+  }
+
+  @include for-size(desktop) {
+    padding: 0 28px;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  font-size: 32px;
+  line-height: 1.32;
+
+  color: $textGreenColor;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
+    margin-right: 73px;
+    font-size: 35px;
+  }
+
+  @include for-size(desktop) {
+    position: relative;
+  }
+}
+
+.header-logo__icon {
+  margin-right: 6px;
+
+  @include for-size(tablet) {
+    margin-right: 9px;
+  }
+
+}
+
+.header-logo__span {
+  color: $textWhiteColor;
+}
+
+.header-nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 12px;
+
+  @include for-size(tablet) {
+    margin-right: 20px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 40px;
+  }
+}
+
+.header-nav__link {
+  display: inline-block;
+
+  line-height: 1.6;
+
+
+  @include for-size(tablet) {
+    font-size: 18px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: width 300ms linear;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}

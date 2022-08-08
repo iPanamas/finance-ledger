@@ -1,16 +1,16 @@
 {
-  "name": "Filmoteka",
+  "name": "FinanceLedger",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "homepage": "https://ipanamas.github.io/Filmoteka/",
   "scripts": {
     "dev": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /Filmoteka/"
+    "build": "parcel build src/*.html --public-url /FinanceLedger/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ipanamas/Filmoteka.git"
+    "url": "git+https://github.com/ipanamas/FinanceLedger.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
