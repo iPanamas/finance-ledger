@@ -59,7 +59,7 @@
 }
 
 .hero-button {
-  background: $buttomBackground;
+  background-color: $buttonBackgroundGreen;
 
   display: inline-flex;
   align-items: center;
@@ -70,8 +70,22 @@
 
 
   border-radius: 5px;
+
+  transition: opacity 200ms linear;
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .hero-button__icon {
+  fill: $textWhiteColor;
   margin-right: 4px;
+  transition: opacity 200ms linear;
+
+  .hero-button:hover &,
+  .hero-button:focus {
+    opacity: 0.8;
+  }
 }

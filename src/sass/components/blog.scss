@@ -1,20 +1,28 @@
-.advantage {
-  background-color: #28A745;
+.blog {
+  background-color: $backgroundColorBlue;
 }
 
-.advantage-container {
+.blog-container {
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
   }
 }
 
-.advantage-info {
-  padding: 40px 30px;
-  background-color: #28A745;
+.blog-image {
+  width: 100%;
+
+  @include for-size(desktop) {
+    width: 670px;
+  }
+}
+
+.blog-info {
+  padding: 40px 20px;
 
   @include for-size(tablet) {
-    min-width: 400px;
+    width: 400px;
   }
 
   @include for-size(desktop) {
@@ -23,7 +31,7 @@
   }
 }
 
-.advantage-info__suptitle {
+.blog-info__suptitle {
   margin-bottom: 8px;
 
   font-size: 18px;
@@ -31,49 +39,40 @@
 
   @include for-size(tablet) {
     font-size: 20px;
+    line-height: 1.65;
   }
 }
 
-.advantage-info__title {
+.blog-info__title {
   margin-bottom: 24px;
 
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
 
-  @include for-size(desktop-up) {
-    width: 204px;
-  }
-
 }
 
-.advantage-info__text {
+.blog-info__text {
   margin-bottom: 24px;
 
   line-height: 1.6;
 
   @include for-size(tablet) {
-    width: 315px;
     font-size: 18px;
-  }
-
-  @include for-size(desktop) {
-    width: 606px;
-    font-size: 18px;
+    line-height: 1.56;
   }
 }
 
-.advantage-into__button {
-  padding: 10px 36px;
-
+.blog-into__button {
+  padding: 10px 40px;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-}
 
-.advantage-image {
-  width: 100%;
+  transition: color 200ms linear, background 200ms linear;
 
-  @include for-size(desktop) {
-    width: 670px;
+  &:hover,
+  &:focus {
+    color: $textBlueColor;
+    background-color: $buttonBackgroundWhite;
   }
 }

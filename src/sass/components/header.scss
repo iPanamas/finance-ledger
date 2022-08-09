@@ -1,7 +1,7 @@
 .header {
-  background-color: #ffffff0d;
+  background-color: rgba(0, 0, 0, 0.3);
 
-  width: 1360px;
+  width: 100vw;
   position: fixed;
   left: 50%;
   top: 0;
@@ -99,7 +99,7 @@
     display: block;
     width: 0;
     height: 1px;
-    background: #ffffff;
+    background: $backgroundColorGreen;
     transition: width 300ms linear;
   }
 
