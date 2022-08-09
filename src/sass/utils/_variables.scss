@@ -1,6 +1,3 @@
-// Animation
-// $animationProps: 300ms ease-in-out 0s;
-
 // Breakpoints
 $mobile: 320px;
 $tablet: 768px;
@@ -8,35 +5,22 @@ $desktop: 1360px;
 
 // COLORS
 
-//Main Colors
+//Text Colors
 $textBlackColor: #333333;
 $textWhiteColor: #ffffff;
 $textGreenColor: #28A745;
 $textBlueColor: #0284D0;
 $heroTextColor: #E9E9E9;
+$textColorGrey: #808080;
 
-//Background Colors
+//Background colors
 $backgroundColorBlue: #0284D0;
 $backgroundColorGreen: #28A745;
+$backgroundColorGrey: #F4F4F4;
+$backgroundColorBlack: #333333;
+$backgroundColorWhite: #FFFFFF;
 
+//Background button colors
 $buttonBackgroundGreen: #28A745;
 $buttonBackgroundWhite: #FFFFFF;
 $buttonBackgroundBlue: #0284D0;
-// $bgMainColor: #ffffff;
-// $bgSecondaryColor: #f7f7f7;
-// $bgThirdColor: #393939;
-// $bgHeaderColor: rgba(0, 0, 0, 0.56);
-// $bgBackdropColor: rgba(0, 0, 0, 0.3);
-// $bgColorBackdropTrailer: rgba(0, 0, 0, 0.9);
-// $bgColorScrollBar: #272727;
-//Modal Colors
-// $modalSubtitleColor: #8c8c8c;
-// $modalYouTubeBtnColor: #ff0019;
-
-//Icon
-// $icon-color: #818181;
-
-//Accent colors
-// $accentColor: #ff6b08;
-// $btnHoverColor: rgba(255, 107, 1, 0.6);
-// END COLORS

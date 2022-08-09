@@ -1,8 +1,9 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
 
   width: 100vw;
   position: fixed;
+  z-index: 100;
   left: 50%;
   top: 0;
 
