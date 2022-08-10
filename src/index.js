@@ -9,11 +9,11 @@ window.onscroll = () => {
       : (headerEl.style.backgroundColor = 'transparent');
   }
 
-  if (window.matchMedia('(max-width: 768px)').matches) {
+  if (window.matchMedia('(max-width: 1359px)').matches) {
     window.scrollY > 120
       ? (headerEl.style.backgroundColor = '#000000cc')
       : (headerEl.style.backgroundColor = 'transparent');
   }
 };
 
-console.log(scrollY);
+console.log(window);
