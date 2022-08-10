@@ -3,8 +3,8 @@
   margin-left: auto;
 
 
-  @include for-size(tablet-up) {
-    max-width: 767px;
+  @include for-size(mobile) {
+    max-width: 320px;
   }
 
   @include for-size(tablet) {

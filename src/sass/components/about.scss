@@ -79,9 +79,7 @@
 }
 
 .about-image {
-  width: 100%;
-
   @include for-size(desktop) {
-    width: 670px;
+    min-width: 670px;
   }
 }
