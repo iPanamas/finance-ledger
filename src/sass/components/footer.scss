@@ -27,6 +27,17 @@
   margin-right: 0;
 }
 
+.footer-social__icon {
+  fill: $iconWhite;
+
+  transition: fill 150ms linear;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
 .footer-text {
   line-height: 1.6;
 

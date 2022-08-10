@@ -1,19 +1,6 @@
 import './sass/main.scss';
+import { headerOpacity } from './js/headerOpacity';
+import { validationForm } from './js/validationForm';
 
-const headerEl = document.querySelector('.header');
-
-window.onscroll = () => {
-  if (window.matchMedia('(min-width: 1360px)').matches) {
-    window.scrollY > 70
-      ? (headerEl.style.backgroundColor = '#000000cc')
-      : (headerEl.style.backgroundColor = 'transparent');
-  }
-
-  if (window.matchMedia('(max-width: 1359px)').matches) {
-    window.scrollY > 120
-      ? (headerEl.style.backgroundColor = '#000000cc')
-      : (headerEl.style.backgroundColor = 'transparent');
-  }
-};
-
-console.log(window);
+headerOpacity();
+validationForm();

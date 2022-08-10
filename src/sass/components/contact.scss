@@ -1,3 +1,11 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill {
+  border: 0;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+
 .contact {
   background-color: $backgroundColorGrey;
 
@@ -21,6 +29,7 @@
 }
 
 .contact-wrapper {
+  position: relative;
   background-color: $backgroundColorGrey;
 
   flex-grow: 1;
@@ -60,9 +69,19 @@
 }
 
 .contact-form__input {
+  outline: none;
   border: none;
   padding: 9px 0 7px 8px;
   margin-bottom: 32px;
+}
+
+.contact-form__input:nth-child(4) {
+
+  margin-bottom: 40px;
+
+  @include for-size(desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .contact-form__input::placeholder {
@@ -77,4 +96,40 @@
   background-color: $buttonBackgroundGreen;
   border-radius: 5px;
   padding: 10px 0;
+
+  transition: opacity 200ms linear;
+
+  &:focus,
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.contact-require {
+  position: absolute;
+
+  top: 275px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 5px;
+
+  @include for-size(tablet) {
+    top: 230px;
+  }
+
+  @include for-size(desktop) {
+    top: 275px;
+  }
+}
+
+.contact-require__icon {
+  margin-right: 5px;
+}
+
+.contact-require__text {
+  font-size: 13px;
+  color: $textColorRed;
+  display: inline-block;
 }
