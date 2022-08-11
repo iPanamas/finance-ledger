@@ -78,9 +78,13 @@
 
 
 .team-images__image {
-  width: 100%;
+  width: 400px;
   margin: 0 auto;
   margin-bottom: 16px;
+
+  @include for-size(tablet) {
+    width: 100%;
+  }
 }
 
 
@@ -109,7 +113,12 @@
   &:hover {
     transform: scale(1.02);
   }
+
+  &:hover .team-overlay {
+    opacity: 1;
+  }
 }
+
 
 .team-overlay {
   display: flex;
@@ -127,14 +136,6 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
   transition: opacity 200ms linear;
-
-
-  &:hover,
-  &:focus {
-
-    opacity: 1;
-
-  }
 }
 
 .team-overlay__list {
