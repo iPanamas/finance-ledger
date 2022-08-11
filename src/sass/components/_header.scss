@@ -81,12 +81,23 @@
 }
 
 .header-nav__item {
+  position: relative;
+  text-align: center;
+
   &::after {
-    margin-top: 3px;
     content: '';
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+
     display: block;
+    margin: 0 auto;
+
     width: 0;
     height: 2px;
+
     background: $accentColor;
     transition: width 150ms linear;
   }
