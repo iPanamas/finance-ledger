@@ -5,6 +5,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"A7Dh":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.validationForm=void 0;const e=document.querySelector(".contact-require"),t=document.querySelector(".contact-form"),s=()=>{e.classList.add("visually-hidden");t.addEventListener("submit",s=>{s.preventDefault();const a=t.elements.name.value,l=t.elements.email.value;""===a||""===l?e.classList.remove("visually-hidden"):(e.classList.add("visually-hidden"),t.reset())})};exports.validationForm=s;
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");var r=require("./js/headerOpacity"),a=require("./js/validationForm");(0,r.headerOpacity)(),(0,a.validationForm)();
+"use strict";require("./sass/main.scss");var e=require("./js/headerOpacity"),s=require("./js/validationForm");const a=document.querySelector(".team-images__wrapper"),r=document.querySelector(".team-overlay"),t=()=>{r.classList.remove("visually-hidden")};a.addEventListener("mouseover",t);const i=()=>{r.classList.add("visually-hidden")};a.addEventListener("mouseout",i),(0,e.headerOpacity)(),(0,s.validationForm)();
 },{"./sass/main.scss":"clu1","./js/headerOpacity":"iwE8","./js/validationForm":"A7Dh"}]},{},["Focm"], null)
-//# sourceMappingURL=/finance-ledger/src.c1977c82.js.map
+//# sourceMappingURL=/finance-ledger/src.90f5dd5f.js.map
