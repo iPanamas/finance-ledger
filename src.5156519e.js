@@ -10,8 +10,8 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"kz9M":[function(require,module,exports) {
 
 },{}],"chxP":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.lightbox=void 0;var e=t(require("simplelightbox"));function t(e){return e&&e.__esModule?e:{default:e}}require("simplelightbox/dist/simple-lightbox.min.css");const i=document.querySelector(".cases-images__item"),o=()=>exports.lightbox=o=new e.default(".cases-images__item a",{showCounter:!1,scaleImageToRatio:!0,caption:!0,captionsData:"alt",captionDelay:100,disableRightClick:!0,scrollZoom:!1,overlayOpacity:.7});exports.lightbox=o;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.lightbox=o;var e=t(require("simplelightbox"));function t(e){return e&&e.__esModule?e:{default:e}}require("simplelightbox/dist/simple-lightbox.min.css");const i=document.querySelector(".cases-images__item");function o(){return exports.lightbox=o=new e.default(".cases-images__item a",{showCounter:!1,scaleImageToRatio:!0,caption:!0,captionsData:"alt",captionDelay:100,disableRightClick:!0,scrollZoom:!1,overlayOpacity:.7})}
 },{"simplelightbox":"yx6k","simplelightbox/dist/simple-lightbox.min.css":"kz9M"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var r=require("./js/headerOpacity"),e=require("./js/validationForm"),i=require("./js/gallery");(0,r.headerOpacity)(),(0,e.validationForm)(),(0,i.lightbox)();
 },{"./sass/main.scss":"clu1","./js/headerOpacity":"iwE8","./js/validationForm":"A7Dh","./js/gallery":"chxP"}]},{},["Focm"], null)
-//# sourceMappingURL=/finance-ledger/src.e2ded7a2.js.map
+//# sourceMappingURL=/finance-ledger/src.5156519e.js.map
