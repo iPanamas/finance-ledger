@@ -57,13 +57,7 @@
   }
 }
 
-.cases-images__item:not(:last-child) {
-  margin-bottom: 8px;
 
-  @include for-size(tablet) {
-    margin-bottom: 0;
-  }
-}
 
 
 .cases-images__list {
@@ -76,16 +70,28 @@
   }
 }
 
+.cases-images__item {
+  transition: opacity 200ms linear;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.cases-images__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
 .cases-images__image {
   margin: 0 auto;
   width: 100%;
-  // width: 290px;
 
-  // @include for-size(tablet) {
-  //   width: 235px;
+  // @include for-size(desktop) {
+  //   width: 431px;
   // }
-
-  @include for-size(desktop) {
-    width: 431px;
-  }
 }

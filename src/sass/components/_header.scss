@@ -44,6 +44,8 @@
 
   color: $textGreenColor;
 
+  transition: transform 200ms linear;
+
   @include for-size(tablet) {
     margin-bottom: 0;
     margin-right: 73px;
@@ -52,6 +54,11 @@
 
   @include for-size(desktop) {
     position: relative;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
   }
 }
 
@@ -73,8 +80,24 @@
   justify-content: center;
 }
 
-.header-nav__item:not(:last-child) {
+.header-nav__item {
+  &::after {
+    margin-top: 3px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $accentColor;
+    transition: width 150ms linear;
+  }
 
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}
+
+.header-nav__item:not(:last-child) {
   margin-right: 12px;
 
   @include for-size(tablet) {
@@ -93,20 +116,5 @@
 
   @include for-size(tablet) {
     font-size: 18px;
-  }
-
-  &::after {
-    margin-top: 3px;
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: $backgroundColorGreen;
-    transition: width 300ms linear;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
   }
 }
