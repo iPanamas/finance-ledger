@@ -1,24 +1,26 @@
-.about {
-  background-color: $backgroundColorGreen;
-}
-
 .about-container {
+  max-width: 100%;
+
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
+    max-width: 100%;
   }
 }
 
 .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding: 40px 30px;
   background-color: #28A745;
 
   @include for-size(tablet) {
-    width: 400px;
+    width: 50%;
   }
 
   @include for-size(desktop) {
-    width: 690px;
     padding: 80px 0 0 20px;
   }
 }
@@ -40,11 +42,6 @@
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
-
-  @include for-size(desktop-up) {
-    width: 204px;
-  }
-
 }
 
 .about-info__text {
@@ -53,17 +50,16 @@
   line-height: 1.6;
 
   @include for-size(tablet) {
-    width: 315px;
     font-size: 18px;
   }
 
   @include for-size(desktop) {
     width: 606px;
-    font-size: 18px;
   }
 }
 
 .about-into__button {
+  width: 158px;
   padding: 10px 36px;
 
   border: 1px solid #FFFFFF;
@@ -76,10 +72,25 @@
     color: $textGreenColor;
     background-color: $buttonBackgroundWhite;
   }
+
+  @include for-size(tablet) {
+    width: 167px;
+  }
 }
 
-.about-image {
-  @include for-size(desktop) {
-    min-width: 670px;
+.image-wrapper {
+  width: 100%;
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+}
+
+.image-wrapper__item {
+  width: 100%;
+
+  @include for-size(tablet) {
+    height: 100%;
+    object-fit: cover;
   }
 }

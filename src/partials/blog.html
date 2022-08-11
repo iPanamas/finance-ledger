@@ -1,37 +1,39 @@
 <section class="blog" id="Blog">
   <div class="container blog-container">
-    <picture>
-      <source media="(min-width: 1360px)" srcset="
+    <div class="image-wrapper">
+      <picture>
+        <source media="(min-width: 769px)" srcset="
               ./images/blog/desktop/blog-desktop.webp 1x,
               ./images/blog/desktop/blog-desktop@2x.webp 2x
               " type="image/webp" />
 
-      <source media="(min-width: 1360px)" srcset="
+        <source media="(min-width: 769px)" srcset="
                     ./images/blog/desktop/blog-desktop.jpg 1x,
                     ./images/blog/desktop/blog-desktop@2x.jpg 2x
               " type="image/webp" />
 
-      <source media="(min-width: 768px)" srcset="
+        <source media="(min-width: 768px)" srcset="
                     ./images/blog/tablet/blog-tablet.webp 1x,
                     ./images/blog/tablet/blog-tablet@2x.webp 2x
               " type="image/webp" />
 
-      <source media="(min-width: 768px)" srcset="
+        <source media="(min-width: 768px)" srcset="
                     ./images/blog/tablet/blog-tablet.jpg 1x,
                     ./images/blog/tablet/blog-tablet@2x.jpg 2x
               " />
 
-      <source media="(max-width: 767px)" srcset="
+        <source media="(max-width: 767px)" srcset="
                     ./images/blog/mobile/blog-mobile.webp 1x,
                     ./images/blog/mobile/blog-mobile@2x.webp 2x
               " type="image/webp" />
 
-      <source media="(max-width: 767px)" srcset="
+        <source media="(max-width: 767px)" srcset="
                     ./images/blog/mobile/blog-mobile.jpg 1x,
                     ./images/blog/mobile/blog-mobile@2x.jpg 2x
               " />
-      <img src="#" alt="people" class="blog-image">
-    </picture>
+        <img src="#" alt="people" class="image-wrapper__item">
+      </picture>
+    </div>
     <div class="blog-info">
       <p class="blog-info__suptitle">April 16 2020</p>
       <h2 class="blog-info__title">Blog Post One</h2>

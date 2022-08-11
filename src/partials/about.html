@@ -1,37 +1,39 @@
 <section class="about" id="About">
   <div class="container about-container">
-    <picture>
-      <source media="(min-width: 1360px)" srcset="
+    <div class="image-wrapper">
+      <picture>
+        <source media="(min-width: 769px)" srcset="
       ./images/about/desktop/people.webp 1x,
       ./images/about/desktop/people@2x.webp 2x
       " type="image/webp" />
 
-      <source media="(min-width: 1360px)" srcset="
+        <source media="(min-width: 769px)" srcset="
             ./images/about/desktop/people.jpg 1x,
             ./images/about/desktop/people@2x.jpg 2x
       " type="image/webp" />
 
-      <source media="(min-width: 768px)" srcset="
+        <source media="(min-width: 768px)" srcset="
             ./images/about/tablet/people.webp 1x,
             ./images/about/tablet/people@2x.webp 2x
       " type="image/webp" />
 
-      <source media="(min-width: 768px)" srcset="
+        <source media="(min-width: 768px)" srcset="
             ./images/about/tablet/people.jpg 1x,
             ./images/about/tablet/people@2x.jpg 2x
       " />
 
-      <source media="(max-width: 767px)" srcset="
+        <source media="(max-width: 767px)" srcset="
             ./images/about/mobile/people.webp 1x,
             ./images/about/mobile/people@2x.webp 2x
       " type="image/webp" />
 
-      <source media="(max-width: 767px)" srcset="
+        <source media="(max-width: 767px)" srcset="
             ./images/about/mobile/people.jpg 1x,
             ./images/about/mobile/people@2x.jpg 2x
       " />
-      <img src="#" alt="people" class="about-image">
-    </picture>
+        <img src="#" alt="people" class="image-wrapper__item">
+      </picture>
+    </div>
     <div class="about-info">
       <p class="about-info__suptitle">What you are looking for</p>
       <h2 class="about-info__title">We provide bespoke solutions</h2>

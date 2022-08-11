@@ -77,11 +77,13 @@
 }
 
 .cases-images__image {
-  width: 290px;
+  margin: 0 auto;
+  width: 100%;
+  // width: 290px;
 
-  @include for-size(tablet) {
-    width: 235px;
-  }
+  // @include for-size(tablet) {
+  //   width: 235px;
+  // }
 
   @include for-size(desktop) {
     width: 431px;

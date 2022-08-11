@@ -21,6 +21,7 @@ input:-webkit-autofill:focus input:-webkit-autofill {
 }
 
 .contact-container {
+  max-width: 100%;
   text-align: center;
 
   @include for-size(tablet) {
@@ -28,15 +29,24 @@ input:-webkit-autofill:focus input:-webkit-autofill {
   }
 }
 
+.image-wrapper {
+  width: 100%;
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+}
+
 .contact-wrapper {
   position: relative;
   background-color: $backgroundColorGrey;
-
-  flex-grow: 1;
+  width: 50%;
+  // flex-grow: 1;
 
   padding: 40px 20px;
 
   @include for-size(tablet) {
+    text-align: left;
     padding: 40px 32px;
   }
 
@@ -45,7 +55,7 @@ input:-webkit-autofill:focus input:-webkit-autofill {
     flex-direction: column;
     justify-content: center;
 
-    text-align: left;
+
   }
 }
 
@@ -66,6 +76,10 @@ input:-webkit-autofill:focus input:-webkit-autofill {
 .contact-form {
   display: flex;
   flex-direction: column;
+
+  @include for-size(desktop) {
+    max-width: 620px;
+  }
 }
 
 .contact-form__input {

@@ -3,6 +3,8 @@
 }
 
 .blog-container {
+  max-width: 100%;
+
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
@@ -10,25 +12,25 @@
   }
 }
 
-.blog-image {
-  width: 100%;
+// .blog-image {
+//   width: 100%;
 
-  @include for-size(desktop) {
-    width: 670px;
-  }
-}
+//   @include for-size(desktop) {
+//     width: 670px;
+//   }
+// }
 
 .blog-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding: 40px 20px;
 
   @include for-size(tablet) {
-    width: 400px;
+    width: 50%;
   }
 
-  @include for-size(desktop) {
-    width: 690px;
-    padding: 80px 0 0 20px;
-  }
 }
 
 .blog-info__suptitle {
@@ -59,11 +61,18 @@
 
   @include for-size(tablet) {
     font-size: 18px;
+
     line-height: 1.56;
+  }
+
+  @include for-size(desktop) {
+    width: 606px;
   }
 }
 
 .blog-into__button {
+  width: 184px;
+
   padding: 10px 40px;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
@@ -74,5 +83,26 @@
   &:focus {
     color: $textBlueColor;
     background-color: $buttonBackgroundWhite;
+  }
+
+  @include for-size(tablet) {
+    width: 194px;
+  }
+}
+
+.image-wrapper {
+  width: 100%;
+
+  @include for-size(tablet) {
+    width: 50%;
+  }
+}
+
+.image-wrapper__item {
+  width: 100%;
+
+  @include for-size(tablet) {
+    height: 100%;
+    object-fit: cover;
   }
 }
