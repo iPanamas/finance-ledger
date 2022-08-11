@@ -119,7 +119,7 @@
   position: absolute;
   top: 0;
 
-  opacity: 0;
+  // opacity: 0;
 
   width: 100%;
   height: 100%;
@@ -130,17 +130,14 @@
 
   &:hover,
   &:focus {
-    opacity: 1;
+    // opacity: 1;
   }
 }
-
 
 .team-overlay__list {
   display: flex;
   align-items: center;
 }
-
-
 
 .team-overlay__item {
   margin-right: 15px;

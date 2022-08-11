@@ -40,12 +40,11 @@ input:-webkit-autofill:focus input:-webkit-autofill {
 .contact-wrapper {
   position: relative;
   background-color: $backgroundColorGrey;
-  width: 50%;
-  // flex-grow: 1;
 
   padding: 40px 20px;
 
   @include for-size(tablet) {
+    width: 50%;
     text-align: left;
     padding: 40px 32px;
   }
