@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  // "homepage": "https://ipanamas.github.io/finance-ledger/",
   "homepage": "https://ipanamas-finance-ledger.netlify.app/",
   "scripts": {
     "dev": "parcel src/*.html --open",
