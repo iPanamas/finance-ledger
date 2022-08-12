@@ -3,10 +3,11 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://ipanamas.github.io/finance-ledger/",
   "scripts": {
     "start": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /finance-ledger/"
+    "build": "parcel build src/*.html --public-url /finance-ledger/",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
