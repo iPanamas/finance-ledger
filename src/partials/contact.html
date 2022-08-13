@@ -36,13 +36,13 @@
     </div>
     <div class="contact-wrapper">
       <h2 class="contact-title">Request Callback</h2>
-      <form class="contact-form">
+      <form class="contact-form" name="contact" method="POST" netlify>
         <div class="contact-form__item">
-          <input class="contact-form__input" type="text" name="name" id="name" placeholder="Enter your name">
+          <input class="contact-form__input" data-name type="text" name="name" id="name" placeholder="Enter your name">
           <label class="contact-form__label" for="name">Enter your name</label>
         </div>
         <div class="contact-form__item">
-          <input class="contact-form__input" type="email" name="email" id="email" placeholder="Enter email*">
+          <input class="contact-form__input" data-email type="email" name="email" id="email" placeholder="Enter email*">
           <label class="contact-form__label" for="email">Enter email*</label>
         </div>
         <div class="contact-require">

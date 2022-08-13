@@ -20,6 +20,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
+    "lodash.throttle": "^4.1.1",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.7.4",

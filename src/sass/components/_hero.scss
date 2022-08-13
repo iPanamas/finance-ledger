@@ -68,7 +68,6 @@
 
   line-height: 1.6;
 
-
   border-radius: 5px;
 
   transition: opacity 200ms linear;
@@ -81,7 +80,9 @@
 
 .hero-button__icon {
   fill: $textWhiteColor;
+
   margin-right: 4px;
+
   transition: opacity 200ms linear;
 
   .hero-button:hover &,

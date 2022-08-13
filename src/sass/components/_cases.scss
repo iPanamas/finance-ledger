@@ -23,12 +23,11 @@
 
     font-size: 20px;
     line-height: 1.65;
-
   }
 }
 
 .cases-title {
-  width: 219px;
+  min-width: 219px;
 
   margin: 0 auto;
   margin-bottom: 20px;
@@ -45,20 +44,15 @@
 
 .cases-text {
   line-height: 1.6;
-  width: 207px;
+  min-width: 207px;
   margin: 0 auto;
   margin-bottom: 20px;
 
-
   @include for-size(tablet) {
-    width: auto;
     font-size: 18px;
     line-height: 1.56;
   }
 }
-
-
-
 
 .cases-images__list {
   @include for-size(tablet) {
@@ -80,18 +74,12 @@
 }
 
 .cases-images__item:not(:last-child) {
-  margin-bottom: 8px;
-
-  @include for-size(tablet) {
-    margin-bottom: 0;
+  @include for-size(tablet-up) {
+    margin-bottom: 8px;
   }
 }
 
 .cases-images__image {
   margin: 0 auto;
   width: 100%;
-
-  // @include for-size(desktop) {
-  //   width: 431px;
-  // }
 }

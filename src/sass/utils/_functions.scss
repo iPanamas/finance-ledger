@@ -1,4 +1,0 @@
-@function getLineHeight($val, $font-size) {
-  $lineHeight: ($val / $font-size);
-  @return $lineHeight;
-}

@@ -19,12 +19,8 @@
   }
 }
 
-.footer-social__item {
+.footer-social__item:not(:last-child) {
   margin-right: 25px;
-}
-
-.footer-social__item:last-child {
-  margin-right: 0;
 }
 
 .footer-social__icon {

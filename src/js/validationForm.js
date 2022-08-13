@@ -1,22 +1,30 @@
-const messageEl = document.querySelector('.contact-require');
-const formEl = document.querySelector('.contact-form');
+var throttle = require('lodash.throttle');
+import { refs } from './referenceEl';
+
+const { form, message, inputName, inputEmail } = refs;
 
 export const validationForm = () => {
-  messageEl.classList.add('visually-hidden');
+  message.classList.add('visually-hidden');
 
-  const handleSubmitForm = event => {
-    event.preventDefault();
-
-    const name = formEl.elements.name.value;
-    const email = formEl.elements.email.value;
-
-    if (name === '' || email === '') {
-      messageEl.classList.remove('visually-hidden');
-    } else {
-      messageEl.classList.add('visually-hidden');
-      formEl.reset();
+  const handleChangeInput = () => {
+    if (inputName.value !== '' || inputEmail.value !== '') {
+      message.classList.add('visually-hidden');
     }
   };
+  inputName.addEventListener('input', throttle(handleChangeInput, 1000));
+  inputEmail.addEventListener('input', throttle(handleChangeInput, 1000));
 
-  formEl.addEventListener('submit', handleSubmitForm);
+  const handleSubmitForm = e => {
+    e.preventDefault();
+    const name = form.elements.name.value;
+    const email = form.elements.email.value;
+
+    if (name === '' || email === '') {
+      message.classList.remove('visually-hidden');
+    } else {
+      message.classList.add('visually-hidden');
+      form.reset();
+    }
+  };
+  form.addEventListener('submit', handleSubmitForm);
 };
