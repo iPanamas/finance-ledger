@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /finance-ledger/",
+    "build": "parcel build src/*.html",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/ipanamas/finance-ledger.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
