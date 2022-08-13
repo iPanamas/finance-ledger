@@ -12,4 +12,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{"lodash.throttle":"FNyO","./referenceEl":"skFC"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var r=require("./js/headerOpacity"),a=require("./js/validationForm");(0,r.headerOpacity)(),(0,a.validationForm)();
 },{"./sass/main.scss":"clu1","./js/headerOpacity":"iwE8","./js/validationForm":"A7Dh"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.62784167.js.map
+//# sourceMappingURL=/src.20097017.js.map
