@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var r=require("./js/headerOpacity"),a=require("./js/validationForm");(0,r.headerOpacity)(),(0,a.validationForm)();
 },{"./sass/main.scss":"clu1","./js/headerOpacity":"iwE8","./js/validationForm":"A7Dh"}]},{},["Focm"], null)
-//# sourceMappingURL=/finance-ledger/src.866b1169.js.map
+//# sourceMappingURL=/src.27a0babf.js.map
