@@ -2,9 +2,9 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include for-size(tablet) {
-    max-width: 768px;
-  }
+  // @include for-size(tablet) {
+  //   max-width: 768px;
+  // }
 
   @include for-size(desktop) {
     max-width: 1360px;
