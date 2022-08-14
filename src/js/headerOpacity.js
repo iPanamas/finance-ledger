@@ -27,5 +27,15 @@ export const headerOpacity = () => {
         header.style.opacity = '1';
       }
     }
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      if (window.scrollY > 40) {
+        header.style.backgroundColor = '#000000';
+        header.style.opacity = '0.8';
+      } else {
+        header.style.backgroundColor = 'transparent';
+        header.style.opacity = '1';
+      }
+    }
   };
 };
