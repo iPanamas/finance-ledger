@@ -162,6 +162,11 @@
   margin-right: 0;
 }
 
+.team-overlay__link {
+  display: inline-block;
+  height: 35px;
+}
+
 .team-overlay__icon {
   fill: $iconWhite;
 }
